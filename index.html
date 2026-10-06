@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"> BTM </div>
+        <nav>
+            <a href="Chaussures.html"> Chaussures</a>
+            <a href="Mobilier.html"> Mobilier </a>
+            <a href="Fruits.html"> Fruits </a>
+        </nav>
+
+        <div class="icones">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="#eff8d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="#eff8d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="10" cy="20.5" r="1" />
+                <circle cx="18" cy="20.5" r="1" />
+                <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1" />
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <div class="gauche">
+            <div class="chemins">
+                <a href="Fruits.html">Fruits</a> > <a href="Agrumes.html">Agrumes</a>
+            </div>
+            
+            <div class="caracteristiques">
+                Caractéristiques :
+                <ul>
+                    <li>Vert</li>
+                    <li>Piquant</li>
+                    <li>Plein de vitamines</li>
+                </ul>
+
+                <a class="details" href="Fiche_Details_Citron_vert.html">Plus de détails</a>
+
+            </div>
+
+        </div>
+
+        <img class="citron" src="IMG/citron vert.png" alt="CItron vert frais et juteux coupé en 2">
+
+        <div class="droite">
+
+            <div class="ProduitPrix">
+                <h1>Citron <span>vert</span></h1>
+                <p class="prix"> 1€</p>
+            </div>
+            <h2>Calibre 4/5</h2>
+            <p class="infos">La lime, lime acide, ou citron vert est un agrume. C'est le fruit du limettier, arbuste de
+                la
+                famille des Rutacées, dont il existe deux espèces : Citrus latifolia et Citrus aurantiifolia.
+            </p>
+            <form action="#">
+
+                <label for="quantite">Quantité :</label>
+
+                <div class="controle-quantite">
+
+                    <button type="button" id="moins">-</button>
+
+                    <input type="number" id="quantite" name="quantite" value="1" min="1">
+
+                    <button type="button" id="plus">+</button>
+
+                </div>
+                <input class="ajouter" type="submit" value="Ajouter au panier">
+
+            </form>
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
